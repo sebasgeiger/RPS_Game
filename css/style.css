@@ -1,16 +1,21 @@
 body {
   width: 65%;
   margin: auto;
-  background-color: #EDEDED;
+  background-image: url("../img/wood3.jpg");
 }
-h1, h2 {
+h1 {
+  text-align: center;
+  color: white;
+  text-decoration: underline;
+}
+h2 {
   text-align: center;
 }
 section {
   border: 2px solid #333;
   margin: 1rem 0;
   padding: 1rem;
-  background-color: #FFF;
+  background-color: rgb(237, 236, 236);
 }
 main {
   display: grid;
@@ -38,7 +43,7 @@ main section {
   opacity: 100%;
 }
 section.scoreboard {
-  border-style: dashed;
+  border-style: solid;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 1rem;
@@ -48,7 +53,7 @@ section.scoreboard {
   main img {transform: scale(.9);}
 }
 #result {
-  border-bottom: 2px dotted #AAA;
+  border-bottom: 2px dotted rgb(170, 170, 170);
   padding-bottom: 1rem;
   grid-column-start: 1;
   grid-column-end: 3;
