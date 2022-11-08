@@ -2,7 +2,6 @@ function initPick() {
     var init = "svg/mystery.svg";
     document.getElementById('oppResult').src = init;   
 }
-
 function rockPick() {
     function genPick() {
         var pick = "svg/mystery.svg";
@@ -24,7 +23,6 @@ function rockPick() {
     }
     genPick();
 }
-
 function paperPick() {
     function genPick() {
         var pick = "svg/mystery.svg";
@@ -36,7 +34,7 @@ function paperPick() {
             var pick = "svg/scissors.svg";
         }
         document.getElementById('oppResult').src = pick;
-        if (pick == "svg/rock.svg") {
+        if (pick == "svg/paper.svg") {
             document.getElementById('result').innerHTML = "It's a Tie";
         } else if (pick == "svg/scissors.svg") {
             document.getElementById('result').innerHTML = "You Lose";
@@ -59,7 +57,7 @@ function scissorsPick() {
         document.getElementById('oppResult').src = pick;
         if (pick == "svg/scissors.svg") {
             document.getElementById('result').innerHTML = "It's a Tie";
-        } else if (pick == "svg/scissors.svg") {
+        } else if (pick == "svg/rock.svg") {
             document.getElementById('result').innerHTML = "You Lose";
         } else {
             document.getElementById('result').innerHTML = "You Win";
@@ -67,4 +65,3 @@ function scissorsPick() {
     }
     genPick();
 }
-
